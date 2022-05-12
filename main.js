@@ -1,12 +1,14 @@
 import './src/styles/settings/colors.css'
 import './src/styles/generic/reset.css'
 import './src/styles/elements/base.css'
+import BoardGame from './src/Objects/BoardGame'
 
-import CardGame from './src/components/CardGame'
+// import PlayerScore from './src/components/PlayerScore'
 
 const $root = document.querySelector('#root')
-const $htmlCardGame = CardGame()
+// const $htmlPlayerScore = PlayerScore()
+const $htmlBoardGame = BoardGame(6)
 
-console.log($htmlCardGame)
+// $root.insertAdjacentHTML('beforebegin', $htmlPlayerScore)
 
-$root.insertAdjacentHTML('beforeend', $htmlCardGame)
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame)
