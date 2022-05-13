@@ -1,7 +1,7 @@
 import './styles.css'
 
 const CardGame = () => {
-  return `
+  return /*html*/ `
   <div class="column">
   <article class="card-game">
     <img src="images/alura-pixel.png" alt="logo da alura">

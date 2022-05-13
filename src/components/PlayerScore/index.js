@@ -1,7 +1,8 @@
 import './styles.css'
 
 const PlayerScore = () => {
-  return `<div class="everything">
+  return /*html*/ `
+  <div class="everything">
   <div class="playerTag"><p> Player 1 </p></div>
 
   <div class="playerScore">
