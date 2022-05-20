@@ -8,7 +8,7 @@ import ArrowDown from '../../components/ArrowDown'
 function ScoreBoard() {
   return /*html*/ `
   <header class='score-board'>
-    ${ArrowDown(1)}  
+    ${ArrowDown(2)}  
     ${PlayerName('Player1')}
     ${PlayerScore(3)}
     ${VsPlayer()}
