@@ -1,35 +1,35 @@
-* {
+.player-score {
   box-sizing: border-box;
-  
-}
-div {
+  width: 50px;
+  height: 20px;
+  background-color: var(--color-floral-white);
+  border: 2px solid var(--color-fiery-rose);
+  padding: 1px;
   display: flex;
-  margin: 1rem 1rem 0 1rem;
+  gap: 1px;
 }
 
-.playerTag, .versus {
-  font-family: sans-serif;
-  color: white;
-  font-weight: bolder;
+.player-score > .pointer {
+  background-color: var(--color-old-silver);
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 33%;
 }
 
-.playerScore {
-  display: flex;
-  
-
-  margin: 1rem 0px 1px 1px;
-  padding: 1px 0 1px 0;
-
-  outline: 2px red solid;
-  padding: 0;
-  height: 1rem;
- 
+.player-score[data-points="1"] > .pointer:first-child {
+  background-color: var(--color-mantis)
 }
 
-.box {
-  background-color: grey;
-  width: 1rem;
-  height: 1rem;
-  margin: 1px 1px 0px 1px;
-  border: 1px white solid;
+.player-score[data-points="2"] {
+  flex-direction: row-reverse
+}
+
+.player-score[data-points="2"] > .pointer:nth-child(n+2) {
+  background-color: var(--color-mantis)
+}
+
+
+
+.player-score[data-points="3"] > .pointer:nth-child(n+3) {
+  background-color: var(--color-mantis)
 }

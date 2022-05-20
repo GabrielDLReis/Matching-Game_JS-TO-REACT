@@ -5,9 +5,18 @@ function CardFrontBack() {
   window.cardFrontBack = {}
   window.cardFrontBack.handleClick = event => {
     const $origin = event.target
-    const $cardFrontBack = $origin.closest('.card-front-back')
+    const $cardFrontBack = $origin.closest('.card-front-back').classList
+    if ($cardFrontBack.target === $cardFrontBack.target(2)) {
+      $cardFrontBack.classList.remove('-active')
+    } else {
+      $cardFrontBack.toggle('-active')
+    }
 
-    $cardFrontBack.classList.toggle('-active')
+    // if (event === ) {
+    //   console.log('Ativado')
+    // } else {
+    //   console.log('Desativado')
+    // }
   }
 
   return /*html*/ `
